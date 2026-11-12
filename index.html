@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Old Faithful Septic | Unicoi, TN</title>
+<meta name="description" content="Honest septic service in Unicoi, Tennessee. Serving the Tri-Cities and East Tennessee. Call (423) 330-3748.">
+<meta name="theme-color" content="#0d1c26">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0d1c26; --ink2:#152a39; --cream:#f4efe3; --cream2:#e9e2d1;
+  --amber:#ff9a4a; --moss:#8fc0dc; --muted:#6c7882;
+  --display:"Bricolage Grotesque",system-ui,sans-serif;
+  --body:"Instrument Sans",system-ui,sans-serif;
+  --ease:cubic-bezier(.2,.8,.2,1);
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--ink);color:var(--cream);font-family:var(--body);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:520px;margin:0 auto;padding:0 20px}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;overflow:hidden;background:#0d1c26}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:36% 60%;transform:scale(1.18);animation:settle 2.6s var(--ease) forwards}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,28,38,.82) 0%,rgba(13,28,38,.35) 38%,rgba(13,28,38,0) 55%,rgba(13,28,38,.9) 100%)}
+@keyframes settle{to{transform:scale(1.02)}}
+.top{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;padding:calc(env(safe-area-inset-top) + 16px) 20px 0}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:700;font-size:18px;letter-spacing:-.01em}
+.mark{width:34px;height:34px;border-radius:10px;background:var(--amber);color:var(--ink);display:grid;place-items:center;font-weight:800;font-size:15px;letter-spacing:-.02em}
+.top-call{font-weight:600;font-size:14px;padding:9px 14px;border-radius:99px;background:rgba(244,239,227,.14);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.hero-copy{position:relative;z-index:2;padding:34px 20px 0}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;font-weight:500;color:var(--cream);opacity:0;animation:fade .8s .2s forwards}
+.eyebrow i{width:7px;height:7px;border-radius:50%;background:var(--amber)}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(46px,14.6vw,78px);line-height:.92;letter-spacing:-.035em;margin-top:14px}
+h1 .line{display:block;overflow:hidden;padding-bottom:.08em}
+h1 .line span{display:block;transform:translateY(110%);animation:rise 1s var(--ease) forwards}
+h1 .line:nth-child(1) span{animation-delay:.25s}
+h1 .line:nth-child(2) span{animation-delay:.37s}
+h1 .line:nth-child(3) span{animation-delay:.49s;color:var(--amber)}
+@keyframes rise{to{transform:none}}
+@keyframes fade{to{opacity:1}}
+.hero-bottom{position:relative;z-index:2;margin-top:auto;padding:0 20px calc(env(safe-area-inset-bottom) + 22px);opacity:0;transform:translateY(16px);animation:up .9s .9s var(--ease) forwards}
+@keyframes up{to{opacity:1;transform:none}}
+.sub{font-size:17px;max-width:30ch;margin-bottom:18px}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;height:62px;border-radius:18px;font-family:var(--display);font-weight:700;font-size:20px;letter-spacing:-.01em;transition:transform .2s var(--ease)}
+.btn:active{transform:scale(.97)}
+.btn-call{background:var(--amber);color:var(--ink)}
+.btn-ghost{margin-top:10px;height:54px;font-size:17px;background:rgba(244,239,227,.12);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.btn svg{width:22px;height:22px}
+
+/* marquee */
+.marquee{background:var(--amber);color:var(--ink);overflow:hidden;padding:13px 0;font-family:var(--display);font-weight:700;font-size:17px;white-space:nowrap}
+.marquee div{display:inline-flex;gap:26px;padding-right:26px;animation:slide 26s linear infinite}
+.marquee b{font-weight:800;opacity:.45}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+section{padding:76px 0}
+.kicker{font-size:13.5px;font-weight:600;color:var(--moss);margin-bottom:14px}
+h2{font-family:var(--display);font-weight:800;font-size:clamp(36px,10.5vw,52px);line-height:.98;letter-spacing:-.03em}
+
+/* scroll-filled statement */
+.say{font-family:var(--display);font-weight:700;font-size:clamp(30px,8.6vw,42px);line-height:1.08;letter-spacing:-.025em}
+.say span{opacity:.16;transition:opacity .35s}
+.say span.on{opacity:1}
+.say em{font-style:normal;color:var(--amber)}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:40px}
+.stat{background:var(--ink2);border-radius:20px;padding:18px 14px}
+.stat b{display:block;font-family:var(--display);font-weight:800;font-size:38px;letter-spacing:-.03em;line-height:1}
+.stat small{display:block;margin-top:8px;font-size:13px;color:#a9b4bd;line-height:1.3}
+
+/* stacked service cards */
+.light{background:var(--cream);color:var(--ink);border-radius:32px 32px 0 0}
+.light .kicker{color:#2f6d8f}
+.cards{margin-top:34px;padding-bottom:10px}
+.card{position:sticky;border-radius:26px;padding:24px 22px 26px;min-height:230px;margin-bottom:16px;display:flex;flex-direction:column;box-shadow:0 -10px 30px rgba(13,28,38,.10)}
+.card:nth-child(1){top:18px;background:#0d1c26;color:var(--cream)}
+.card:nth-child(2){top:34px;background:#1f4a63;color:var(--cream)}
+.card:nth-child(3){top:50px;background:var(--amber);color:var(--ink)}
+.card:nth-child(4){top:66px;background:#fff;color:var(--ink)}
+.card .n{font-family:var(--display);font-weight:700;font-size:14px;opacity:.6}
+.card h3{font-family:var(--display);font-weight:800;font-size:34px;letter-spacing:-.03em;line-height:1;margin-top:auto}
+.card p{margin-top:10px;font-size:16px;opacity:.82;max-width:32ch}
+
+/* photo */
+.photo{position:relative;border-radius:26px;overflow:hidden;margin-top:34px;aspect-ratio:4/5;background:#1f4a63}
+.photo img{position:absolute;inset:-8% 0;width:100%;height:116%;object-fit:cover;will-change:transform}
+.photo figcaption{position:absolute;left:14px;bottom:14px;right:14px;background:rgba(13,28,38,.72);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--cream);border-radius:16px;padding:14px 16px;font-size:15px}
+.photo figcaption b{font-family:var(--display);font-size:19px;display:block;margin-bottom:2px}
+
+/* steps */
+.steps{margin-top:34px;display:grid;gap:26px}
+.step{display:grid;grid-template-columns:52px 1fr;gap:16px;align-items:start}
+.step .num{width:52px;height:52px;border-radius:16px;background:var(--ink);color:var(--amber);display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:22px}
+.step h3{font-family:var(--display);font-weight:700;font-size:22px;letter-spacing:-.02em}
+.step p{color:#44525c;font-size:16px;margin-top:3px}
+
+/* towns */
+.towns{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.towns span{padding:10px 16px;border-radius:99px;background:var(--ink2);font-weight:500;font-size:15.5px}
+
+/* final */
+.final{text-align:left;padding-bottom:150px}
+.final h2{font-size:clamp(46px,14vw,72px)}
+.final h2 em{font-style:normal;color:var(--amber)}
+.final .big{margin-top:28px}
+.final p{margin-top:16px;color:#a9b4bd;font-size:15.5px}
+footer{padding:26px 0 120px;font-size:13.5px;color:#7f8a94;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.rv.in{opacity:1;transform:none}
+
+/* sticky call bar */
+.bar{position:fixed;left:12px;right:12px;bottom:calc(env(safe-area-inset-bottom) + 12px);z-index:20;max-width:496px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 10px 10px 18px;border-radius:22px;background:rgba(244,239,227,.94);color:var(--ink);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 14px 40px rgba(0,0,0,.35);transform:translateY(140%);transition:transform .6s var(--ease)}
+.bar.show{transform:none}
+.bar small{display:block;font-size:12.5px;color:#55626c}
+.bar strong{font-family:var(--display);font-size:17px;letter-spacing:-.01em}
+.bar a{display:flex;align-items:center;gap:8px;height:48px;padding:0 20px;border-radius:15px;background:var(--ink);color:var(--cream);font-family:var(--display);font-weight:700;font-size:17px}
+.bar svg{width:18px;height:18px}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;transition-duration:.01ms!important}
+  .say span{opacity:1}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <img class="hero-img" src="hero.jpg" alt="A loyal old hound dog on a green lawn with the East Tennessee mountains behind" fetchpriority="high">
+  <div class="top">
+    <a class="brand" href="#"><span class="mark">OF</span>Old Faithful Septic</a>
+    <a class="top-call" href="tel:+14233303748">(423) 330-3748</a>
+  </div>
+  <div class="hero-copy">
+    <span class="eyebrow"><i></i>Unicoi, Tennessee · Serving the Tri-Cities</span>
+    <h1>
+      <span class="line"><span>Honest</span></span>
+      <span class="line"><span>septic work.</span></span>
+      <span class="line"><span>Every time.</span></span>
+    </h1>
+  </div>
+  <div class="hero-bottom">
+    <p class="sub">Pumping, repairs and installs across the Tri-Cities and East Tennessee. One call and it's handled.</p>
+    <a class="btn btn-call" href="tel:+14233303748">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.900.7 2.800a2 2 0 0 1-.5 2.100L8 9.900a16 16 0 0 0 6 6l1.300-1.300a2 2 0 0 1 2.100-.400c.900.300 1.800.600 2.800.700a2 2 0 0 1 1.700 2z"/></svg>
+      Call (423) 330-3748
+    </a>
+    <a class="btn btn-ghost" href="#services">See what we do</a>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true"><div>
+  <span>Septic pumping</span><b>/</b><span>Tank inspections</span><b>/</b><span>Repairs</span><b>/</b><span>New installs</span><b>/</b><span>Drain fields</span><b>/</b><span>Tri-Cities</span><b>/</b>
+  <span>Septic pumping</span><b>/</b><span>Tank inspections</span><b>/</b><span>Repairs</span><b>/</b><span>New installs</span><b>/</b><span>Drain fields</span><b>/</b><span>Tri-Cities</span><b>/</b>
+</div></div>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Sound familiar?</p>
+    <p class="say" id="say">Slow drains. Gurgling pipes. A wet patch in the yard that wasn't there last week. <em>That's your tank asking for help.</em> Old Faithful finds the problem fast and fixes it right.</p>
+    <div class="stats">
+      <div class="stat rv"><b><span data-count="3">0</span></b><small>Tri-Cities covered</small></div>
+      <div class="stat rv"><b><span data-count="100">0</span>%</b><small>East Tennessee local</small></div>
+      <div class="stat rv"><b><span data-count="1">0</span></b><small>call to get it handled</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="light" id="services">
+  <div class="wrap">
+    <p class="kicker">What we do</p>
+    <h2 class="rv">Everything your septic system needs.</h2>
+    <div class="cards">
+      <article class="card"><span class="n">01</span><h3>Pumping</h3><p>Regular pump-outs that keep your tank healthy and your yard dry.</p></article>
+      <article class="card"><span class="n">02</span><h3>Inspections</h3><p>Buying, selling or just not sure? We check the whole system and tell you straight.</p></article>
+      <article class="card"><span class="n">03</span><h3>Repairs</h3><p>Backups, broken lines, failing drain fields. Found fast and fixed properly.</p></article>
+      <article class="card"><span class="n">04</span><h3>New installs</h3><p>New home or a full replacement, set up to last for decades.</p></article>
+    </div>
+
+    <figure class="photo rv">
+      <img src="yard.jpg" alt="A healthy green yard behind an East Tennessee home" id="par" loading="lazy">
+      <figcaption><b>The best septic job is one you forget.</b>Green yard, quiet pipes, nothing to think about.</figcaption>
+    </figure>
+
+    <div style="height:64px"></div>
+    <p class="kicker">How it works</p>
+    <h2 class="rv">Three steps. No runaround.</h2>
+    <div class="steps">
+      <div class="step rv"><span class="num">1</span><div><h3>Call us</h3><p>Tell us what's going on. You talk to a real person who knows septic.</p></div></div>
+      <div class="step rv"><span class="num">2</span><div><h3>We come out</h3><p>We look at the system, explain the problem and give you a clear price.</p></div></div>
+      <div class="step rv"><span class="num">3</span><div><h3>It's handled</h3><p>We do the work, clean up after ourselves and you get on with your day.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Where we work</p>
+    <h2 class="rv">Right here in East Tennessee.</h2>
+    <div class="towns rv">
+      <span>Unicoi</span><span>Erwin</span><span>Johnson City</span><span>Jonesborough</span><span>Elizabethton</span><span>Kingsport</span><span>Bristol</span><span>Gray</span><span>Piney Flats</span>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2 class="rv">Got a problem? <em>Call Old Faithful.</em></h2>
+    <a class="btn btn-call big rv" href="tel:+14233303748">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+      (423) 330-3748
+    </a>
+    <p class="rv">Old Faithful Septic · Unicoi, TN · Serving the Tri-Cities and East Tennessee</p>
+    <footer><span>© 2026 Old Faithful Septic</span><span>Preview by Baitti</span></footer>
+  </div>
+</section>
+
+<div class="bar" id="bar">
+  <div><small>Septic problem?</small><strong>Old Faithful Septic</strong></div>
+  <a href="tel:+14233303748">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.400" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+    Call now
+  </a>
+</div>
+
+<script>
+(function(){
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // reveal on scroll
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting) return;
+      e.target.classList.add('in');
+      var c = e.target.querySelector('[data-count]');
+      if(c) count(c);
+      io.unobserve(e.target);
+    });
+  },{threshold:.2});
+  document.querySelectorAll('.rv').forEach(function(el,i){
+    el.style.transitionDelay = (i%3)*90+'ms'; io.observe(el);
+  });
+
+  function count(el){
+    var to = +el.dataset.count, t0 = performance.now(), d = 1100;
+    if(reduce){ el.textContent = to; return; }
+    (function tick(t){
+      var p = Math.min(1,(t-t0)/d); p = 1-Math.pow(1-p,3);
+      el.textContent = Math.round(to*p);
+      if(p<1) requestAnimationFrame(tick);
+    })(t0);
+  }
+
+  // words fill in as you scroll
+  var say = document.getElementById('say'), words = [];
+  (function split(node){
+    Array.prototype.slice.call(node.childNodes).forEach(function(n){
+      if(n.nodeType===3){
+        var f = document.createDocumentFragment();
+        n.textContent.split(/(\s+)/).forEach(function(w){
+          if(!w.trim()){ f.appendChild(document.createTextNode(w)); return; }
+          var s = document.createElement('span'); s.textContent = w; f.appendChild(s); words.push(s);
+        });
+        node.replaceChild(f,n);
+      } else split(n);
+    });
+  })(say);
+
+  var bar = document.getElementById('bar'), par = document.getElementById('par'), hero = document.querySelector('.hero');
+  var ticking = false;
+  function onScroll(){
+    ticking = false;
+    var vh = innerHeight, r = say.getBoundingClientRect();
+    var p = (vh*.85 - r.top) / (r.height + vh*.35);
+    var n = Math.round(Math.max(0,Math.min(1,p))*words.length);
+    words.forEach(function(w,i){ w.classList.toggle('on', i<n); });
+    bar.classList.toggle('show', scrollY > hero.offsetHeight*.7);
+    if(par && !reduce){
+      var pr = par.parentNode.getBoundingClientRect();
+      if(pr.bottom>0 && pr.top<vh){
+        var k = (pr.top + pr.height/2 - vh/2)/vh;
+        par.style.transform = 'translateY('+(k*-7)+'%)';
+      }
+    }
+  }
+  addEventListener('scroll',function(){ if(!ticking){ ticking=true; requestAnimationFrame(onScroll);} },{passive:true});
+  onScroll();
+})();
+</script>
+</body>
+</html>
